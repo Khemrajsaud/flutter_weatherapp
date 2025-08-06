@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather/auth/auth_services.dart';
+import 'package:weather/auth/login_screen.dart';
 import 'package:weather/screens/home_screen.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _SignupScreenState extends State<SignupScreen>
     if (user != null) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => HomeScreen()),
+        MaterialPageRoute(builder: (_) => LoginScreen()),
       );
     }
   }
